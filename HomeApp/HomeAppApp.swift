@@ -11,7 +11,25 @@ import SwiftUI
 struct HomeAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                ContentView()
+                    .tabItem {
+                        Image (systemName: "house.fill")
+                        Text ("Home")
+                    }
+                Text ("Automation")
+                    .tabItem {
+                        Image (systemName:"deskclock.fill")
+                        Text ("Automation")
+                    }
+                Text("Discover")
+                    .tabItem {
+                        Image(systemName:"star.fill")
+                        Text("Discover")
+                    }
+            }
+            .accentColor(.white)
+            .preferredColorScheme(.dark)
         }
     }
 }
