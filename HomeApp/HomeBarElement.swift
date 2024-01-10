@@ -7,7 +7,7 @@
 
 import SwiftUI
 let lightBlue = Color(
-    hue: 50.0/360.0,
+    hue: 190.0/360.0,
         saturation: 1.0,
         brightness: 1.0
     )

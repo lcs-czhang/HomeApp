@@ -14,7 +14,7 @@ struct ContentView: View {
             brightness: 1.0
         )
     let lightGreen = Color(
-        hue: 180.0/360.0,
+        hue: 175.0/360.0,
             saturation: 1.0,
             brightness: 1.0
         )
