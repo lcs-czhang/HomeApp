@@ -26,15 +26,22 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Image("homeBackground")
+                .resizable()
+                .ignoresSafeArea()
             VStack(alignment: .leading) {
                 HStack{
                     Spacer()
                     Image(systemName: "waveform")
+                        .foregroundColor(Color.white)
                     Image(systemName: "plus")
+                        .foregroundColor(Color.white)
                     Image(systemName: "ellipsis.circle")
+                        .foregroundColor(Color.white)
                 }
                 Text("My Home")
                     .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.white)
                 HStack{
                     
                 }
