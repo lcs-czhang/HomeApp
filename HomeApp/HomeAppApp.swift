@@ -13,6 +13,7 @@ struct HomeAppApp: App {
         WindowGroup {
             TabView {
                 ContentView()
+                    .preferredColorScheme(.dark)
                     .tabItem {
                         Image (systemName: "house.fill")
                         Text ("Home")
@@ -29,7 +30,6 @@ struct HomeAppApp: App {
                     }
             }
             .accentColor(.white)
-            .preferredColorScheme(.dark)
         }
     }
 }

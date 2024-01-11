@@ -24,34 +24,51 @@ struct ContentView: View {
             brightness: 1.0
         )
     var body: some View {
-        ZStack {
-            Image("homeBackground")
-                .resizable()
-                .ignoresSafeArea()
-            VStack(alignment: .leading) {
-                HStack{
-                    Spacer()
-                    Image(systemName: "waveform")
-                        .foregroundColor(Color.white)
-                    Image(systemName: "plus")
-                        .foregroundColor(Color.white)
-                    Image(systemName: "ellipsis.circle")
-                        .foregroundColor(Color.white)
+        NavigationStack {
+            ZStack{
+                Image("homeBackground")
+                    .resizable()
+                    .ignoresSafeArea()
+                VStack{
+                    HStack {
+                        Text("My Home")
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
+                            .foregroundColor(Color.white)
+                            .padding()
+                        Spacer()
+                    }
+                    HStack {
+                        HomeBarElement(imageName: "fan.fill", imageColor: lightBlue, elementType: "Climate", elementState: "16.0-20.5º")
+                    }
                 }
-                Text("My Home")
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color.white)
-                HStack{
-                    
-                }
-                    
             }
-            .padding()
+            //.navigationTitle("My Home")
+            .toolbar{
+                ToolbarItem(placement: .topBarTrailing){
+                    Button(action: {},label: {
+                        Image(systemName: "waveform")
+                            .foregroundColor(Color.white)
+                    })
+                }
+                ToolbarItem(placement: .topBarTrailing){
+                    Button(action: {},label: {
+                        Image(systemName: "plus")
+                            .foregroundColor(Color.white);
+                    })
+                }
+                ToolbarItem(placement: .topBarTrailing){
+                    Button(action: {},label: {
+                        Image(systemName: "ellipsis.circle")
+                        .foregroundColor(Color.white);
+                    })
+                }
+            }
         }
     }
 }
 
 #Preview {
     ContentView()
+        .preferredColorScheme(.dark)
 }

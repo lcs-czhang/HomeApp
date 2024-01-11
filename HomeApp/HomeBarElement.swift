@@ -17,25 +17,25 @@ struct HomeBarElement: View {
     let elementType: String
     let elementState: String
     var body: some View {
-        ZStack {
-            Image("homeBackground")
-            Capsule()
-                .frame(width: 45.0, height: 125.0)
-                .opacity(0.3)
-                .rotationEffect(.init(degrees: 90))
-            HStack{
-                Image(systemName: imageName)
-                    .foregroundColor(imageColor)
-                VStack(alignment: .leading){
-                    Text(elementType)
-                        .font(.footnote)
-                        .foregroundColor(Color.white)
-                    Text(elementState)
-                        .font(.footnote)
-                        .foregroundColor(Color.gray)
-                }
+        HStack{
+            Image(systemName: imageName)
+                .foregroundColor(imageColor)
+                .padding(.leading, 10.0)
+            VStack(alignment: .leading){
+                Text(elementType)
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color.white)
+                Text(elementState)
+                    .font(.subheadline)
+                    .fontWeight(.regular)
+                    .foregroundColor(Color.gray)
             }
+            .padding(.trailing, 20.0)
         }
+        .padding(.vertical, 5.0)
+        .background(.black.opacity(0.3))
+            .cornerRadius(255)
     }
 }
 
