@@ -8,9 +8,14 @@
 import SwiftUI
 let lightBlue = Color(
     hue: 190.0/360.0,
-        saturation: 1.0,
-        brightness: 1.0
-    )
+    saturation: 1.0,
+    brightness: 1.0
+)
+let lightGray = Color(
+    hue: 0.0/360.0,
+    saturation: 0.0,
+    brightness: 0.8
+)
 struct HomeBarElement: View {
     let imageName: String
     let imageColor: Color
@@ -19,6 +24,7 @@ struct HomeBarElement: View {
     var body: some View {
         HStack{
             Image(systemName: imageName)
+                .font(.title3)
                 .foregroundColor(imageColor)
                 .padding(.leading, 10.0)
             VStack(alignment: .leading){
@@ -27,9 +33,9 @@ struct HomeBarElement: View {
                     .fontWeight(.semibold)
                     .foregroundColor(Color.white)
                 Text(elementState)
-                    .font(.subheadline)
+                    .font(.footnote)
                     .fontWeight(.regular)
-                    .foregroundColor(Color.gray)
+                    .foregroundColor(lightGray)
             }
             .padding(.trailing, 20.0)
         }

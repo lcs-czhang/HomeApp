@@ -12,6 +12,7 @@
 		E17763092B4E1EF20087AD00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E17763082B4E1EF20087AD00 /* Assets.xcassets */; };
 		E177630C2B4E1EF20087AD00 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E177630B2B4E1EF20087AD00 /* Preview Assets.xcassets */; };
 		E17763152B4E2A710087AD00 /* HomeBarElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17763142B4E2A710087AD00 /* HomeBarElement.swift */; };
+		E1EE80DA2B5095200058FADE /* favoritesBarElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EE80D92B5095200058FADE /* favoritesBarElement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		E17763082B4E1EF20087AD00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E177630B2B4E1EF20087AD00 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E17763142B4E2A710087AD00 /* HomeBarElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBarElement.swift; sourceTree = "<group>"; };
+		E1EE80D92B5095200058FADE /* favoritesBarElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoritesBarElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				E17763142B4E2A710087AD00 /* HomeBarElement.swift */,
+				E1EE80D92B5095200058FADE /* favoritesBarElement.swift */,
 				E17763042B4E1EEF0087AD00 /* HomeAppApp.swift */,
 				E17763062B4E1EEF0087AD00 /* ContentView.swift */,
 				E17763082B4E1EF20087AD00 /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 			files = (
 				E17763072B4E1EEF0087AD00 /* ContentView.swift in Sources */,
 				E17763052B4E1EEF0087AD00 /* HomeAppApp.swift in Sources */,
+				E1EE80DA2B5095200058FADE /* favoritesBarElement.swift in Sources */,
 				E17763152B4E2A710087AD00 /* HomeBarElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

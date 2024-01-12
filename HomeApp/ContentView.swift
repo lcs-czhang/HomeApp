@@ -30,20 +30,37 @@ struct ContentView: View {
                     .resizable()
                     .ignoresSafeArea()
                 VStack{
-                    HStack {
-                        Text("My Home")
-                            .font(.largeTitle)
+                    ScrollView(.horizontal) {
+                        LazyHStack {
+                            HomeBarElement(imageName: "fan.fill", imageColor: lightBlue, elementType: "Climate", elementState: "16.0-20.5º")
+                            HomeBarElement(imageName: "lock.fill", imageColor: lightGreen, elementType: "Sercurity", elementState: "No Alerts")
+                            HomeBarElement(imageName: "tv.and.hifispeaker.fill", imageColor: .white, elementType: "Climate", elementState: "16.0-20.5º")
+                        }
+                    }
+                    HStack{
+                        Text("Favorites")
+                            .font(.title2)
                             .fontWeight(.bold)
-                            .foregroundColor(Color.white)
-                            .padding()
                         Spacer()
                     }
-                    HStack {
-                        HomeBarElement(imageName: "fan.fill", imageColor: lightBlue, elementType: "Climate", elementState: "16.0-20.5º")
+                    HStack{
+                        favoritesBarElement(imageName: "door.garage.closed", imageColor: lightGreen, elementName: "Garage", elementType: "Door", elementState: "Closed")
+                        favoritesBarElement(imageName: "door.garage.closed", imageColor: lightGreen, elementName: "Garage", elementType: "Door", elementState: "Closed")
+                    }
+                    HStack{
+                        favoritesBarElement(imageName: "door.garage.closed", imageColor: lightGreen, elementName: "Garage", elementType: "Door", elementState: "Closed")
+                        favoritesBarElement(imageName: "door.garage.closed", imageColor: lightGreen, elementName: "Garage", elementType: "Door", elementState: "Closed")
+                    }
+                    HStack{
+                        Text("Basement")
+                            .font(.title2)
+                            .fontWeight(.bold)
+                        Spacer()
                     }
                 }
+                .padding()
             }
-            //.navigationTitle("My Home")
+            .navigationTitle("My Home")
             .toolbar{
                 ToolbarItem(placement: .topBarTrailing){
                     Button(action: {},label: {
