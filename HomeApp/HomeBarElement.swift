@@ -17,6 +17,7 @@ let lightGray = Color(
     brightness: 0.8
 )
 struct HomeBarElement: View {
+    
     let imageName: String
     let imageColor: Color
     let elementType: String

@@ -13,6 +13,10 @@
 		E177630C2B4E1EF20087AD00 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E177630B2B4E1EF20087AD00 /* Preview Assets.xcassets */; };
 		E17763152B4E2A710087AD00 /* HomeBarElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17763142B4E2A710087AD00 /* HomeBarElement.swift */; };
 		E1EE80DA2B5095200058FADE /* favoritesBarElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EE80D92B5095200058FADE /* favoritesBarElement.swift */; };
+		E1EE80F72B556D3B0058FADE /* electricity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EE80F62B556D3B0058FADE /* electricity.swift */; };
+		E1EE80FB2B5573CA0058FADE /* bigChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EE80FA2B5573CA0058FADE /* bigChunk.swift */; };
+		E1EE80FD2B5575910058FADE /* device.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EE80FC2B5575910058FADE /* device.swift */; };
+		E1EE80FF2B56DD230058FADE /* temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EE80FE2B56DD210058FADE /* temperature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		E177630B2B4E1EF20087AD00 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E17763142B4E2A710087AD00 /* HomeBarElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBarElement.swift; sourceTree = "<group>"; };
 		E1EE80D92B5095200058FADE /* favoritesBarElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoritesBarElement.swift; sourceTree = "<group>"; };
+		E1EE80F62B556D3B0058FADE /* electricity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = electricity.swift; sourceTree = "<group>"; };
+		E1EE80FA2B5573CA0058FADE /* bigChunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bigChunk.swift; sourceTree = "<group>"; };
+		E1EE80FC2B5575910058FADE /* device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = device.swift; sourceTree = "<group>"; };
+		E1EE80FE2B56DD210058FADE /* temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = temperature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +63,13 @@
 		E17763032B4E1EEF0087AD00 /* HomeApp */ = {
 			isa = PBXGroup;
 			children = (
+				E1EE80F62B556D3B0058FADE /* electricity.swift */,
 				E17763142B4E2A710087AD00 /* HomeBarElement.swift */,
 				E1EE80D92B5095200058FADE /* favoritesBarElement.swift */,
+				E1EE80FC2B5575910058FADE /* device.swift */,
 				E17763042B4E1EEF0087AD00 /* HomeAppApp.swift */,
+				E1EE80FA2B5573CA0058FADE /* bigChunk.swift */,
+				E1EE80FE2B56DD210058FADE /* temperature.swift */,
 				E17763062B4E1EEF0087AD00 /* ContentView.swift */,
 				E17763082B4E1EF20087AD00 /* Assets.xcassets */,
 				E177630A2B4E1EF20087AD00 /* Preview Content */,
@@ -143,10 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1EE80FB2B5573CA0058FADE /* bigChunk.swift in Sources */,
+				E1EE80F72B556D3B0058FADE /* electricity.swift in Sources */,
+				E1EE80FF2B56DD230058FADE /* temperature.swift in Sources */,
 				E17763072B4E1EEF0087AD00 /* ContentView.swift in Sources */,
 				E17763052B4E1EEF0087AD00 /* HomeAppApp.swift in Sources */,
 				E1EE80DA2B5095200058FADE /* favoritesBarElement.swift in Sources */,
 				E17763152B4E2A710087AD00 /* HomeBarElement.swift in Sources */,
+				E1EE80FD2B5575910058FADE /* device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

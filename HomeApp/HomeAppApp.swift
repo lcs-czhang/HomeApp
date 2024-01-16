@@ -29,6 +29,7 @@ struct HomeAppApp: App {
                         Text("Discover")
                     }
             }
+            .tabViewStyle(/*@START_MENU_TOKEN@*/DefaultTabViewStyle()/*@END_MENU_TOKEN@*/)
             .accentColor(.white)
         }
     }
